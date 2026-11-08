@@ -1,5 +1,5 @@
 [project]
-site_url = "notebook.jasonlapie.com"
+site_url = "https://notebook.jasonlapie.com"
 site_name = "My Bioinformatics Notebook"
 # site_description = "Your project description"
 # site_author = "Your name"
