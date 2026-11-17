@@ -9,6 +9,24 @@ icon: simple/markdown
 
 # Spatial Density using [scider](https://bioconductor.org/packages/release/bioc/html/scider.html)
 
+## Theory
+
+#### Kernal Density Estimation
+
+Formula as employed by scider:
+
+$$\hat{\lambda}(u) = \frac{1}{\displaystyle \int_{W} k(v - u) \, dv} \sum_{i=1}^{n} \frac{w_i}{2\pi \sigma^2} \exp\left( -\frac{\|u - x_i\|^2}{2\sigma^2} \right)$$
+
+where:
+
+- $\hat{\lambda}(u)$ is the estimated spatial intensity (cells or counts per unit area) at location $u$.
+- $n$ is the total number of cells (or spatial spots) in the dataset.
+- $x_i$ represents the 2D spatial coordinates of cell $i$.
+- $w_i$ is the weight assigned to cell $i$ (where $w_i = 1$ for unweighted cell density, or equals gene expression counts when weighted by a feature).
+- $k(\cdot)$ is the 2D smoothing kernel function (defaulting to an isotropic Gaussian kernel with bandwidth $\sigma$).
+- $e(u)$ is the edge-correction factor accounting for the proportion of the kernel falling inside the tissue boundary $W$.
+
+
 ## Setup
 
 #### Installation
