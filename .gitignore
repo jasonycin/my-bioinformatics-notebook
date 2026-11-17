@@ -4,3 +4,10 @@ __pycache__/
 .venv
 /venv
 env/
+site
+/site
+site/
+.venv314
+/.venv314
+.cache
+/.cache

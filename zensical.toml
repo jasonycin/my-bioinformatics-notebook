@@ -13,9 +13,14 @@ site_name = "My Bioinformatics Notebook"
 nav = [
   { "Get started" = "get-started.md" },
   { "Markdown in 5min" = "markdown.md" },
+  { "Transcriptomics" = [
+    { "Spatial" = [
+      { "Spatial Density (scider)" = "transcriptomics/spatial/spatial-density.md" }
+    ]}
+  ]},
   { "Mathematics" = [
     { "Statistics" = [
-      { "Spatial Autocorrelation" = "mathematics/statistics/spatial-autocorrelation.md"}
+      { "Spatial Autocorrelation" = "mathematics/statistics/spatial-autocorrelation.md" }
     ]}
   ]}
 ]
