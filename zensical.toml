@@ -11,6 +11,7 @@ repo_name = "jasonycin/my-bioinformatics-notebook"
 # edit_uri = "edit/main/docs/"
 
 nav = [
+  { "Blog" = ["blog/index.md"] },
   { "Transcriptomics" = [
     { "Transcriptomics" = "transcriptomics/index.md" },
     { "Spatial Transcriptomics" = [
@@ -130,3 +131,7 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
+
+[project.plugins.blog]
+authors_profiles = false
+authors_profiles_toc = true
