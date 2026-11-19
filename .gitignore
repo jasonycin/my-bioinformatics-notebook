@@ -7,6 +7,8 @@ env/
 site
 /site
 site/
+site/*
+site
 .venv314
 /.venv314
 .cache

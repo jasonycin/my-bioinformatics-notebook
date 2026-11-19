@@ -1,5 +1,5 @@
 ---
-icon: simple/markdown
+icon: lucide/vector-square
 ---
 
 ???+ warning "Article under construction"
